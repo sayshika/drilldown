@@ -1,0 +1,8 @@
+<%
+var db = new Database("jdbc:mysql://localhost:3306/fraud", "root", "root");
+var pan = 3;
+var querystring =  "SELECT * FROM test WHERE number="+pan;
+var result = db.query(querystring);
+ 
+print(result);
+%>
